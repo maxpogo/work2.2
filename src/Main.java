@@ -1,38 +1,24 @@
 public class Main {
+
     public static void main(String[] args) {
-        int check = 200;
-        int replenishment2 = 1400;
-        int bonus1 = 1;
-        int bonus0 = 0;
-        boolean more1000 = true;
 
+        int score = 100;
 
+        int add = 1200;
 
-        if (more1000) {
-            bonus1 = 1;
+        int bonus = 0;
+
+        if (add >= 1000) {
+            bonus = add / 100;
         } else {
-            bonus1 = 0;
+            boolean b = add <= 1000;
         }
-        int bonus4 = replenishment2 / 100;
+        int end = score + add + bonus;
 
-        if(replenishment2 < 1000) {
-            bonus4 = 0;
-
-
-
-        }
-
-        System.out.println("Итоговые бонусные мили: " + bonus4 );
-
-
-
-
-
-
-
-
-
+        System.out.println("Итоговый счет: " + end);
+        System.out.println("Бонус: " + bonus);
 
     }
 }
+
 
