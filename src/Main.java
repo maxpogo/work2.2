@@ -10,8 +10,6 @@ public class Main {
 
         if (add >= 1000) {
             bonus = add / 100;
-        } else {
-            boolean b = add <= 1000;
         }
         int end = score + add + bonus;
 
